@@ -1,0 +1,12 @@
+[Hew Section Information]
+Version=2.0
+Section overlay=No
+Entry=4
+Address1=0x00000000
+Section1=B_1,R_1,B_2,R_2,B,R,SU,SI
+Address2=0xFFF88000
+Section2=FIXEDVECT
+Address3=0xFFF88100
+Section3=PResetPRG
+Address4=0xFFF88200
+Section4=C_1,C_2,C,C$*,D*,P,PIntPRG,W*

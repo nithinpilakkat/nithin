@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model version="3.1.3">
+ <framework name="qpc"/>
+ <package name="package1" stereotype="0x02">
+  <class name="Class1" superclass="qpc::QActive">
+   <statechart>
+    <initial target="../1">
+     <initial_glyph conn="24,2,5,0,4,4">
+      <action box="0,-2,10,2"/>
+     </initial_glyph>
+    </initial>
+    <state name="vacant">
+     <tran trig="B_Hired" target="../../2">
+      <tran_glyph conn="43,14,1,3,3">
+       <action box="0,-2,10,2"/>
+      </tran_glyph>
+     </tran>
+     <tran trig="bidding">
+      <tran_glyph conn="26,12,3,-1,5">
+       <action box="0,-2,10,2"/>
+      </tran_glyph>
+     </tran>
+     <tran trig="status">
+      <tran_glyph conn="26,18,3,-1,6">
+       <action box="0,-2,10,2"/>
+      </tran_glyph>
+     </tran>
+     <tran trig="Accept">
+      <tran_glyph conn="26,21,3,-1,7">
+       <action box="0,-2,10,2"/>
+      </tran_glyph>
+     </tran>
+     <tran trig="Engage" target="../5">
+      <tran_glyph conn="26,15,3,3,8">
+       <action box="0,-2,10,2"/>
+      </tran_glyph>
+     </tran>
+     <state name="engaged">
+      <tran trig="engaged">
+       <tran_glyph conn="38,18,2,-1,3">
+        <action box="0,-2,10,2"/>
+       </tran_glyph>
+      </tran>
+      <state_glyph node="34,12,7,6"/>
+     </state>
+     <state_glyph node="26,6,17,18"/>
+    </state>
+    <state name="hired">
+     <initial target="../3">
+      <initial_glyph conn="49,21,5,3,3,2,2">
+       <action box="0,-2,10,2"/>
+      </initial_glyph>
+     </initial>
+     <tran trig="B_topay" target="../../3">
+      <tran_glyph conn="63,29,2,1,8,-28">
+       <action box="0,5,10,2"/>
+      </tran_glyph>
+     </tran>
+     <state name="WaitingOff">
+      <tran trig="B_hired" target="../../3">
+       <tran_glyph conn="63,15,2,0,5">
+        <action box="0,-2,10,2"/>
+       </tran_glyph>
+      </tran>
+      <state_glyph node="54,9,11,6"/>
+     </state>
+     <state name="WaitingOn">
+      <tran trig="B_hired" target="../../2">
+       <tran_glyph conn="57,20,0,2,-5">
+        <action box="0,-2,10,2"/>
+       </tran_glyph>
+      </tran>
+      <state_glyph node="54,20,11,6"/>
+     </state>
+     <state_glyph node="46,5,25,24"/>
+    </state>
+    <state name="topay">
+     <tran trig="B_Vacant" target="../../1">
+      <tran_glyph conn="31,34,0,2,-10">
+       <action box="0,-2,10,2"/>
+      </tran_glyph>
+     </tran>
+     <state_glyph node="24,34,11,7"/>
+    </state>
+    <state_diagram size="80,68"/>
+   </statechart>
+  </class>
+ </package>
+</model>

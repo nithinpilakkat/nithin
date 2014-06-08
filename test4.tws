@@ -1,0 +1,21 @@
+[HIMDBVersion]
+2.0
+[DATABASE_VERSION]
+"1.2" 
+[CURRENT_PROJECT]
+"SmartNav" 
+[GENERAL_DATA]
+[BREAKPOINTS]
+[OPEN_WORKSPACE_FILES]
+"D:\Working project\Smart Navigation\Smart Navigation(h)\test4\bsp\Sim900.c" 
+"D:\Working project\Smart Navigation\Smart Navigation(h)\test4\bsp\TCP.c" 
+"D:\Working project\Smart Navigation\Smart Navigation(h)\test4\main.c" 
+"D:\Working project\Smart Navigation\Smart Navigation(h)\test4\resetprg.c" 
+[WORKSPACE_FILE_STATES]
+"D:\Working project\Smart Navigation\Smart Navigation(h)\test4\bsp\Sim900.c" 66 105 840 380 0 3 
+"D:\Working project\Smart Navigation\Smart Navigation(h)\test4\bsp\TCP.c" -4 -36 936 560 1 2 
+"D:\Working project\Smart Navigation\Smart Navigation(h)\test4\main.c" 22 35 562 360 0 1 
+"D:\Working project\Smart Navigation\Smart Navigation(h)\test4\resetprg.c" 0 0 558 356 0 0 
+[LOADED_PROJECTS]
+"SmartNav" 
+[END]
